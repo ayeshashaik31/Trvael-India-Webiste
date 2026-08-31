@@ -40,10 +40,11 @@ Travel-India/
 ├── index.html
 ├── index.css
 ├── index.js
+```
 
-🚀 How to Run
+## 🚀 How to Run
 1. Clone the repository:
-git clone :(https://github.com/ayeshashaik31/Trvael-India-Webiste)
+git clone: https://github.com/ayeshashaik31/Trvael-India-Webiste
 2. Open the project folder.
 3. Open index.html in your browser.
 
