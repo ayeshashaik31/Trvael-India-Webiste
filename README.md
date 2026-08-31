@@ -30,7 +30,6 @@ Travel India allows users to explore travel packages, view destinations, submit 
 - HTML5
 - CSS3
 - JavaScript
-- Git & GitHub
 
 ## 📂 Project Structure
 
