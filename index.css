@@ -1,0 +1,544 @@
+/* GLOBAL STYLES */
+
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #fffdf7;
+    color: #2b2118;
+    line-height: 1.6;
+}
+
+h1{
+    line-height: 1.2;
+}
+
+button{
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* NAVBAR */
+
+.links{
+    background-color: #ffffff;   
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;   
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    padding: 1.2rem;
+    gap: 2rem;
+    left: 0;
+    box-shadow: 0 2px 10px rgba(43, 33, 24, 0.1);
+}
+
+.links a{
+    color: #2b2118;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.links a:hover{
+    color: #ff7a00;
+}
+
+/* HOME */
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7rem 5% 4rem;
+    background: linear-gradient( rgba(43, 33, 24, 0.5), rgba(43, 33, 24, 0.5) ),
+     url("https://wallpapers.com/images/hd/beautiful-travel-2560-x-1600-wallpaper-bvxgwktdqhgjeqrw.jpg") center / cover no-repeat;
+}
+
+.homecontent{
+    max-width: 50rem;
+    color: #ffffff;
+}
+
+.homecontent h1{
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin-bottom: 1rem;
+}
+
+.homecontent h1 span{
+    color: #ffb703;
+}
+
+.homecontent p{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.homecontent button { 
+    padding: 0.9rem 2rem; 
+    border: none; 
+    border-radius: 0.4rem; 
+    background-color: #ff7a00; 
+    color: #ffffff; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    transition: all 0.3s ease; 
+}
+
+.homecontent button:hover { 
+    background-color: #e66d00; 
+    transform: translateY(-3px); 
+}
+
+/* COMMON SECTION STYLES */
+.booking, 
+.services, 
+.contact, 
+.review, 
+.gallery, 
+.packages { 
+    padding: 5rem 8%; 
+}
+
+.booking > h1, .services > h1, .contact > h1, .review > h1, .gallery > h1, .packages > h1 { 
+    text-align: center; 
+    font-size: 2.3rem; 
+    margin-bottom: 2.5rem; 
+    color: #2b2118;
+ }
+
+ .booking > h1::after, .services > h1::after, .contact > h1::after, .review > h1::after, .gallery > h1::after, .packages > h1::after { 
+    content: ""; 
+    display: block; 
+    width: 4rem; 
+    height: 0.2rem; 
+    margin: 0.7rem auto 0; 
+    background-color: #ff7a00; 
+}
+
+/*  BOOKING  */
+
+.booking { 
+    background-color: #fff8ed; 
+}
+
+.booking-content { 
+    max-width: 40rem; 
+    margin: 0 auto; 
+    padding: 2rem; 
+    background-color: #ffffff; 
+    border-radius: 0.8rem; 
+    box-shadow: 0 5px 25px rgba(43, 33, 24, 0.1); 
+}
+
+.booking-content label { 
+    display: block; 
+    margin-bottom: 0.4rem; 
+    font-size: 1rem; 
+    font-weight: 600; 
+}    
+
+.booking-content input { 
+    width: 100%; 
+    padding: 0.8rem 1rem; 
+    margin-bottom: 1.2rem; 
+    border: 1px solid #ddd2c5; 
+    border-radius: 0.4rem; 
+    font-size: 1rem; 
+    outline: none; 
+    transition: border-color 0.3s ease; 
+}
+
+.booking-content input:focus { 
+    border-color: #ff7a00; 
+}
+
+.booking-content button, .contact button { 
+    display: block; 
+    width: 100%; 
+    padding: 0.9rem; 
+    border: none; 
+    border-radius: 0.4rem; 
+    background-color: #ff7a00; 
+    color: #ffffff; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    transition: background-color 0.3s ease; 
+}
+
+.booking-content button:hover, .contact button:hover { 
+    background-color: #138808; 
+}
+
+/*  SERVICES  */
+.services { 
+    background-color: #ffffff; 
+}
+
+.service {
+     display: grid; 
+     grid-template-columns: repeat(3, 1fr); 
+     gap: 1.5rem; 
+     max-width: 75rem; 
+     margin: 0 auto; 
+}
+
+.service > div { 
+    padding: 1.8rem; 
+    background-color: #fff8ed; 
+    border-radius: 0.7rem; 
+    border: 1px solid #f0e1d0; 
+    transition: all 0.3s ease; 
+}
+
+.service > div:hover { 
+    transform: translateY(-0.4rem); 
+    box-shadow: 0 8px 20px rgba(43, 33, 24, 0.12); 
+    border-color: #ffb703; 
+}
+
+.service h1 {
+     font-size: 1.3rem; 
+     margin-bottom: 0.8rem;
+     color: #138808; 
+}
+
+
+.service p { 
+    font-size: 0.95rem; 
+    color: #665f58; 
+}
+
+/*  CONTACT  */
+
+.contact { 
+    background-color: #fff8ed; 
+}
+
+.contact form { 
+    max-width: 40rem; 
+    margin: 0 auto; 
+    padding: 2rem; 
+    background-color: #ffffff; 
+    border-radius: 0.8rem; 
+    box-shadow: 0 5px 25px rgba(43, 33, 24, 0.1); 
+}
+
+.contact label {
+     display: block; 
+     margin-bottom: 0.4rem; 
+     font-size: 1rem; 
+     font-weight: 600; 
+}
+
+.contact input { 
+    width: 100%; 
+    padding: 0.8rem 1rem; 
+    margin-bottom: 1.2rem; 
+    border: 1px solid #ddd2c5; 
+    border-radius: 0.4rem; 
+    font-size: 1rem; 
+    outline: none; 
+}
+
+.contact input:focus { 
+    border-color: #ff7a00; 
+}
+
+/*  REVIEWS  */ 
+
+.gallery { 
+    background-color: #fff8ed; 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem; 
+}
+
+.gallery > h1 { 
+    grid-column: 1 / -1; 
+}
+
+.gallery img { 
+    width: 100%; 
+    height: 15rem; 
+    object-fit: cover; 
+    border-radius: 0.6rem; 
+    transition: transform 0.3s ease; 
+}
+
+.gallery img:hover { 
+    transform: scale(1.03); 
+}
+
+.review-content img{
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.review-content {
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    padding: 10px;
+}
+
+.review-card {
+    width: 350px;
+    padding: 20px;
+
+    background: white;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+
+    flex-shrink: 0;
+}
+
+.review-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.review-user img {
+    width: 55px;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-user h3 {
+    margin: 0 0 5px;
+}
+ 
+.review-card p {
+    line-height: 1.5;
+}
+
+.packages {
+    padding: 50px 5%;
+}
+
+.packages > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-content{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 15px;
+}
+
+.package-card {
+    min-width: calc((100% - 40px) / 3);
+    flex-shrink: 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.package-card h2,
+.package-card p,
+.package-card h3 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.package-card button {
+    margin: 10px 15px 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.package-card button:hover{
+    background-color: #138808;
+    color: white;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    padding: 3rem 5%;
+    background-color: #222;
+    color: white;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 0 0 0.7rem;
+}
+
+
+.footer-section a {
+    display: block;
+    margin-bottom: 0.7rem;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: orange;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+/* RESPONSIVE DESIGN TABLET + MOBILE */
+
+@media (max-width: 768px) {
+    /* NAVBAR */
+
+    .links {
+        justify-content: flex-start;
+        gap: 1.5rem;
+        padding: 1rem;
+        overflow-x: auto;
+        white-space: nowrap;  /* Don't allow the content to go onto a new line. */
+    }
+
+      .links a {
+        font-size: 0.95rem;
+    }
+
+    /* HOME */
+     .home {
+        padding: 6rem 5% 3rem;
+    }
+
+     .homecontent {
+        max-width: 40rem;
+    }
+
+     .homecontent h1 {
+        font-size: clamp(2.3rem, 7vw, 4rem);
+    }
+
+     .homecontent p {
+        font-size: 1.1rem;
+    }
+
+        /* COMMON SECTIONS */
+
+    .booking,
+    .services,
+    .contact,
+    .review,
+    .gallery,
+    .packages {
+        padding: 4rem 5%;
+    }
+
+    .booking > h1,
+    .services > h1,
+    .contact > h1,
+    .review > h1,
+    .gallery > h1,
+    .packages > h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+    /* BOOKING */
+
+    .booking-content {
+        max-width: 35rem;
+        padding: 1.5rem;
+    }
+
+       /* SERVICES */
+
+    .service {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .service > div {
+        padding: 1.5rem;
+    }
+
+    /* CONTACT */
+
+    .contact form {
+        max-width: 35rem;
+        padding: 1.5rem;
+    }
+
+       /* REVIEWS */
+
+    .review-content {
+        gap: 1rem;
+    }
+
+
+        /* GALLERY */
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .gallery img {
+        height: 13rem;
+    }
+
+    /* PACKAGES */
+
+    .package-content {
+        gap: 1rem;
+    }
+
+    .package-card {
+        min-width: calc((100% - 1rem) / 2);
+    }
+
+    .package-card img {
+        height: 12rem;
+    }
+
+     /* FOOTER */
+
+    .info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 3rem 5%;
+    }
+
+}
+
