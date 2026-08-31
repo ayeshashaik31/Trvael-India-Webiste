@@ -47,8 +47,8 @@ git clone :(https://github.com/ayeshashaik31/Trvael-India-Webiste)
 2. Open the project folder.
 3. Open index.html in your browser.
 
-📸 Project
+## 📸 Project
 Travel India provides a simple and responsive interface for users to explore destinations and book travel packages.
 
-👩‍💻 Author
+## 👩‍💻 Author
 Ayesha (skayesha3121@gmail.com)
